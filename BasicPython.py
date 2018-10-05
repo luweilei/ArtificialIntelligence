@@ -1,34 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-############################################################
-# CMPSC 442: Homework 1
-############################################################
-
-student_name = "Luwei Lei"
-
-############################################################
-# Section 1: Python Concepts
-############################################################
-
-python_concepts_question_1 = """
-Python is strongly typed means the compiler could keep track of the
-types of all the values. The type will not suddenly changed unless
-an explicit conversion is called. Python could also be dynamically
-typed at the same time, which means a variable is simply a value
-bound to a name，so the type of a variable could be changed later on.
-"""
-
-python_concepts_question_2 = """
-There is a TypeError: "unhashable type: 'list'" while complie this line.
-This is due to the list is mutable so it doesn't has a __hash__ function in source code.
-The solution to this error is just simply change list type to tuple :
-points_to_names = {(0, 0): "home", (1, 2): "school", (-1, 1): "market"}
-"""
-
-python_concepts_question_3 = """
-The concatenate2 is better since it doesn't need to hold an empty
-string in the memory, and it doesn't need to go through a loop.
-"""
 
 ############################################################
 # Section 2: Working with Lists
@@ -200,23 +171,3 @@ class Polynomial(object):
             result[1] = result[0] + result[1]
             result = result[1:]
         return " ".join(result)
-
-############################################################
-# Section 7: Feedback
-############################################################
-
-feedback_question_1 = """
-I spent almost 6 hours on this assignment
-"""
-
-feedback_question_2 = """
-The last question, which is to write a Polynomials class.
-I do not have much experience on working with class.
-So it took some time to study the class structure.
-"""
-
-feedback_question_3 = """
-I think the homework is pretty fair.
-I practiced something I already know like question 3-5.
-And I also learned something that are kind of new to me like question 2 and 6.
-"""
